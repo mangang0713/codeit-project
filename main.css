@@ -16,6 +16,8 @@ nav {
   background-color: #edf7ff;
 }
 
+
+
 .index-top {
   display: flex;
   justify-content: space-between;
@@ -23,7 +25,8 @@ nav {
   width: 100%;
   height: 9.4rem;
   max-width: 192rem;
-  padding: 0 20rem;
+  padding: 0 32px;
+  margin: 0 32px;
 }
 
 header {
@@ -124,6 +127,7 @@ section:nth-of-type(even) {
   font-weight: 700;
   line-height: 5.8rem;
   letter-spacing: -0.03rem;
+  width: 262px;
 }
 
 .title-1-colored {
@@ -197,4 +201,61 @@ footer {
   display: flex;
   column-gap: 1.2rem;
   height: 2rem;
+}
+
+
+
+@media (max-width: 1199px) {
+  .index-top {
+    padding: 0;
+  }
+
+  .content-image {
+    width: 550px;
+    height: 450px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .hero-image {
+    width: 100%;
+    height: auto;
+    padding: 0 32px;
+  }
+  
+  section:nth-of-type(odd) {
+    grid-template:
+      "title"
+      "image"
+      "description";
+  }
+
+  section:nth-of-type(even) {
+    grid-template:
+      "title"
+      "image"
+      "description";
+  }
+
+  section {
+    height: auto;
+  }
+
+  .title, .description {
+    margin: 0 32px;
+    width: 100%;
+  }
+
+  .content-image {
+    margin: 0 32px;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 350px){
+  body {
+    overflow-x: hidden;
+  }
 }
