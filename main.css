@@ -254,12 +254,18 @@ footer {
   .content-image {
     margin: 0 32px;
     padding: 0;
-    width: 100%;
   }
 }
 
 @media (max-width: 350px){
   body {
     overflow-x: hidden;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .page-body-top {
+    font-size: 2rem;
+    line-height: 2.625rem;  
   }
 }
