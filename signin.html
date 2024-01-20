@@ -24,15 +24,16 @@
         <div class="sign-inputs">
           <div class="sign-input-box">
             <label class="sign-input-label">이메일</label>
-            <input class="sign-input">
-            <p id="error-message"></p>
+            <input class="sign-input input-email" type="email" placeholder="내용 입력">
+            <p id="error-message-id"></p>
           </div>
           <div class="sign-input-box sign-password">
             <label class="sign-input-label">비밀번호</label>
-            <input class="sign-input" type="password" />
+            <input class="sign-input input-password" type="password" placeholder="비밀번호">
             <button class="eye-button" type="button">
               <img src="/images/eye-off.png" />
             </button>
+            <p id="error-message-pw"></p>
           </div>
         </div>
         <button class="cta" type="submit">로그인</button>
