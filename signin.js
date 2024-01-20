@@ -5,6 +5,9 @@ const errorMessagePw = document.getElementById('error-message-pw');
 const login = document.querySelector('.cta');
 const answerEmail = 'test@codeit.com';
 const answerPassword = 'codeit101';
+const toggleButtonPw = document.querySelector('.eye-button');
+const eyeOn = document.getElementById('eye-on');
+const eyeOff = document.getElementById('eye-off');
 
 // 검색하여 email 형식이 맞는 지 확인하는 방법을 찾음.
 function isValidEmail(email) {
@@ -55,4 +58,17 @@ login.addEventListener('click', function() {
 document.querySelector('.sign-form').addEventListener('submit', function(event) {
   event.preventDefault();
 });
+
+
+function togglePassword() {
+  if (myInputPassword.type === 'password') {
+    myInputPassword.type = 'text';
+    eyeOn.style.display = 'none';
+    eyeOff.style.display = 'block';
+  } else {
+    myInputPassword.type = 'password';
+    eyeOn.style.display = 'block';
+    eyeOff.style.display = 'none';
+  }
+}
 
