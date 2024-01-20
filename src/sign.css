@@ -89,6 +89,10 @@ header {
   border-color: var(--primary);
 }
 
+.error {
+  border-color: var(--red);
+}
+
 #error-message-pw, #error-message-id {
   color: var(--red);
   display: none;
